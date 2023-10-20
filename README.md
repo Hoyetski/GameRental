@@ -31,9 +31,18 @@ Projekt *GameRental* jest projektem strony internetowej za pomocą, której prac
 
 Z naszej strony będą korzystać tylko pracownicy naszej wypożyczalni gier.
 
-Strona będzie miała ekran logowania, w którym będziemy mieli formularz do logowania oraz rejestracji.
+Nasza strona posiada podstronę do logowania i rejestracji, na której znajduje się formularz do logowania i rejestracji oraz logo strony GameRental:
+![Logo GameRental](https://i.imgur.com/jQEIAJP.png)
 
-Po zalogowaniu lub rejestracji użytkownik zostanie przekierowany do panelu administratora.  
+Strona posiada podstronę, która jest panelem administratora.
+Na samej górze podstrony znajduje się pasek górny, który zawiera wycentrowane logo strony GameRental:
+![Logo GameRental](https://i.imgur.com/jQEIAJP.png)
+Pod paskiem górnym, podstrona posiada następujące sekcje:
+- Sekcja dostępnych gier, w której będą wyświetlene wszystkie dostępne gry....
+- Sekcja dodawania gier, w której będzie się znajdował formularz....
+- Sekcja dostępnych klientów, w której będą wyświetleni wszyscy dostępni dostępni klienci....
+- Sekcja dodawania klientów, w której będzie się znajdował formularz....
+Na samej dole podstrony znajduje footer, który zawiera w sobie wycentrowany text *© 2023 Kacper Chojecki*.
 
 W panelu administratora
 
@@ -41,12 +50,6 @@ W panelu administratora
 
   
 #### Strona logowania:
-
-Strona logowania posiada logo strony GameRental:
-![Logo GameRental](https://i.imgur.com/jQEIAJP.png)
-
-
-oraz 2 formularze, które służą do logowania oraz rejestracji administratora.
 
 Po zarejestrowaniu użytkownik jest automatycznie logowany i przenoszony do panelu administratora, po zalogowaniu użytkownika następuje to samo.
 
@@ -128,6 +131,11 @@ Będzie się w niej znajdować formularz z **inputami** na:
 - nazwisko
 
 - adres e-mail
+
+---
+
+#### Footer
+Footer posiada wycentrowany text *© 2023 Kacper Chojecki*.
 
 ---
 
