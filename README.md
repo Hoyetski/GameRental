@@ -6,25 +6,24 @@
 
 - [Funkcjonalność](###funkcjonalność)
 
-- [Strona logowania](####strona-logowania)
+  - [Strona logowania](####strona-logowania)
 
-- [Panel administratora](####panel-administratora)
+  - [Panel administratora](####panel-administratora)
 
-- [Pasek górny](####pasek-górny)
+    - [Pasek górny](####pasek-górny)
 
-- [Sekcja dostępnych gier](####sekcja-dostępnych-gier)
+    - [Sekcja dostępnych gier](####sekcja-dostępnych-gier)
+ 
+    - [Sekcja dodawnia gier](####sekcja-dodawnia-gier)
 
-- [Sekcja dodawnia gier](####sekcja-dodawnia-gier)
+    - [Sekcja dostępnych klientów](####sekcja-dostępnych-klientów)
 
-- [Sekcja dostępnych klientów](####sekcja-dostępnych-klientów)
+    - [Sekcja dodawnia klienta](####sekcja-dodawnia-klienta)
 
-- [Sekcja dodawnia klienta](####sekcja-dodawnia-klienta)
-
-- [Footer](####footer)
+    - [Footer](####footer)
 
 ---
 
-  
 
 ## Opis:
 
@@ -41,7 +40,6 @@ W panelu administratora
 ## Funkcjonalność:
 
   
-
 #### Strona logowania:
 
 Strona logowania posiada logo strony GameRental:
@@ -58,7 +56,6 @@ Po zarejestrowaniu użytkownik jest automatycznie logowany i przenoszony do pane
 
 Panel administratora będzie służył do:
 
-  
 
 - Dodawania nowych klientów do bazy danych
 
@@ -74,43 +71,27 @@ Panel administratora będzie służył do:
 
 - Sprawdzania zaległości klientów
 
-  
-
 ---
-
-  
 
 #### Pasek górny:
 
 Pasek górny posiada na środku logo strony:
 
-**wstawić logo jak będzie**
-
-  
+![Logo GameRental](https://i.imgur.com/jQEIAJP.png)
 
 ---
-
-  
 
 #### Sekcja dostępnych gier:
 
 W tej sekcji będzie tabela z wszystkimi dostępnymi grami w bazie danych mająca następującą strukturę:
 
-  
-
 | id | title |quantity|action|
 |--|--|--|--|
 | 1 | Minecraft |13|***Remove***|
 
-  
-
 W kolumnie **action** będzie się znajdować przycisk ***Remove*** dla każdej gry, który będzie służył do usuwania danej gry z bazy danych.
 
-  
-
 ---
-
-  
 
 #### Sekcja dodawania gier:
 
@@ -118,39 +99,23 @@ Sekcja dodawania gier będzie służyć do wprowadzania nowych gier do bazy dany
 
 Będzie się w niej znajdować formularz z **inputami** na:
 
-  
-
 - tytuł gry
 
 - ilość sztuk danej gry
 
-  
-
 ---
-
-  
 
 #### Sekcja dostępnych klientów:
 
 W tej sekcji będzie tabela z wszystkimi dostępnymi klientami w bazie danych mająca następującą strukturę:
 
-  
-
-
-
 | id | first-name | last-name | email | action |
 |--|--|--|--|--|
 | 1 | John |Joe | johnjoe@example.com | ***Remove*** |
 
-  
-
 W kolumnie **action** będzie się znajdować przycisk ***Remove*** dla każdego klienta, który będzie służył do usuwania danego klienta z bazy danych.
 
-  
-
 ---
-
-  
 
 #### Sekcja dodawania klientów:
 
@@ -158,18 +123,12 @@ Sekcja dodawania klientów będzie służyć do wprowadzania nowych klientów do
 
 Będzie się w niej znajdować formularz z **inputami** na:
 
-  
-
 - imię
 
 - nazwisko
 
 - adres e-mail
 
-  
-
 ---
-
-  
 
 Zrobić ten opis projektu tak, że nie musi być taka jak finalny projekt jak go będziemy oddawać ale jak będziemy oddawać projekt to trzeba zaktualizować opis projektu do stanu faktycznego.
