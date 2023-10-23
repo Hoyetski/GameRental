@@ -109,16 +109,17 @@ Sekcja dodawania gier będzie służyć do wprowadzania nowych gier do bazy dany
 **Opis wyglądu:**
 Znajduje się w niej wycentrowany nagłówek *Sekcja dostępnych klientów* a pod nim tabela z następującym układem:
 
-| id | first-name | last-name | email | action |
-|--|--|--|--|--|
-| 1 | John |Joe | johnjoe@example.com | [***Remove***] [***Change***] |
+| id | first-name | last-name | email | rented | deadline |action |
+|--|--|--|--|--|--|--|
+| 1 | John | Joe | johnjoe@example.com | Minecraft| 23 days|[***Remove***] [***Change***] |
 
-Każdy rekord tabeli będzie zamknięty w formularzu a komórki *first-name, last-name oraz e-mail* będą polami, w których będą z góry wpisane wartości.
+Każdy rekord tabeli będzie zamknięty w formularzu a komórki *first-name, last-name, e-mail, rented, deadline* będą polami, w których będą z góry wpisane wartości.
 W kolumnie action znajdują się przyciski *Remove* oraz *Change* służące do wysyłania  poszczególnego formularza.
 Pola w formularzach mają atrybut *required*.
 
 **Uwaga:**
 - System nie jest zabezpieczony przed wysyłaniem pustego formularza poprzez programy inne niż przeglądarki.
+- System nie jest zabezpieczony przed edycją adresu e-mail na taki, który jest zajęty w bazie danych.
 
 **Opis funkcjonalności:**
 Pola każdego rekordu tabeli znajdującej się w sekcji dostępnych klientów będą wypełniane informacjami adekwatnymi do każdego klienta znajdującej się w bazie danych.
