@@ -21,7 +21,7 @@
 		- [Sekcja dodawnia gier](####sekcja-dodawnia-gier)
 		- [Sekcja dostępnych klientów](####sekcja-dostępnych-klientów)
 		- [Sekcja dodawnia klienta](####sekcja-dodawnia-klienta)
-		- [Link wylogowywujący](https://github.com/Hoyetski/GameRental/edit/main/README.md/ "link wylogowywujący")
+		- [Link wylogowywujący](https://github.com/Hoyetski/GameRental/ "link wylogowywujący")
 
 ## Opis projektu i wyglądu:
 
