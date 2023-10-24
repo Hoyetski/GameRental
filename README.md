@@ -16,51 +16,51 @@
 		- [Footer](#footer)
 
 ## Wstęp:
-Projekt *GameRental* jest projektem strony internetowej za pomocą, której pracownicy naszej wypożyczalni gier *GameRental* będą mieli ułatwioną pracę.
-Z naszej strony będą korzystać tylko pracownicy naszej wypożyczalni gier.
-Logo strony *GameRental*:
+- Projekt *GameRental* jest projektem strony internetowej za pomocą, której pracownicy naszej wypożyczalni gier *GameRental* będą mieli ułatwioną pracę.
+- Z naszej strony będą korzystać tylko pracownicy naszej wypożyczalni gier.
+- Logo strony *GameRental*:
 ![Logo GameRental](https://i.imgur.com/jQEIAJP.png)
 
 ## Opis wyglądu i funkcjonalności:
 
 ### Strona logowania:
 **Opis wyglądu:**
-Strona logowania posiada 2 formularze, zarówno pierwszy jak i drugi posiadają pola na e-mail oraz hasło oraz przycisk do wysyłania formularza.
-Formularze są obok siebie a nad nimi znajduje się wycentrowane logo strony *GameRental*
-Zarówno formularze jak i logo są zamknięte w kontynerze, który jest wycentrowany horyzontalnie i poziomo.
+- Strona logowania posiada 2 formularze, zarówno pierwszy jak i drugi posiadają pola na e-mail oraz hasło oraz przycisk do wysyłania formularza.
+- Formularze są obok siebie a nad nimi znajduje się wycentrowane logo strony *GameRental*
+- Zarówno formularze jak i logo są zamknięte w kontynerze, który jest wycentrowany horyzontalnie i poziomo.
 
 **Opis funkcjonalności:**
-Po wysłaniu formularza rejestracji użytkownik jest dodawany do bazy danych.
-Po wysłaniu formularza logowania, tworzona jest sesja php a użytkownik jest przekierowywany do panelu administratora.
-Jeśli użytkownik wejdzie na stronę logowania będąc zalogowanym to jest przenoszony do panelu administratora.
+- Po wysłaniu formularza rejestracji użytkownik jest dodawany do bazy danych.
+- Po wysłaniu formularza logowania, tworzona jest sesja php a użytkownik jest przekierowywany do panelu administratora.
+- Jeśli użytkownik wejdzie na stronę logowania będąc zalogowanym to jest przenoszony do panelu administratora.
 
 **Uwaga:**
 - System rejestracji nie jest zabezpieczony na możliwość założenia 2 kont na ten sam adres e-mail!
-- System nie jest zabezpieczony przed wysyłaniem pustego formularza poprzez programy inne niż przeglądarki.
+- System nie jest zabezpieczony przed wysyłaniem pustego formularza lub formularza z niepoprawnymi typami danych poprzez programy inne niż przeglądarki.
 
 ### Panel administratora:
 **Opis wyglądu:**
-Panel administratora, posiada następujący układ od góry do dołu:
-- [Pasek górny](#pasek-górny)
-- [Sekcja wypożyczania gier](#sekcja-wypożyczania-gier)
-- [Sekcja wszystkich wypożyczeń](#sekcja-wszystkich-wypożyczeń)
-- [Sekcja dostępnych gier](#sekcja-dostępnych-gier)
-- [Sekcja dodawania gier](#sekcja-dodawania-gier)
-- [Sekcja dostępnych klientów](#sekcja-dostępnych-klientów)
-- [Sekcja dodawania klienta](#sekcja-dodawania-klientów)
-- [Link wylogowywujący](#link-wylogowywujący)
-- [Footer](#footer)
+- Panel administratora, posiada następujący układ od góry do dołu:
+	- [Pasek górny](#pasek-górny)
+	- [Sekcja wypożyczania gier](#sekcja-wypożyczania-gier)
+	- [Sekcja wszystkich wypożyczeń](#sekcja-wszystkich-wypożyczeń)
+	- [Sekcja dostępnych gier](#sekcja-dostępnych-gier)
+	- [Sekcja dodawania gier](#sekcja-dodawania-gier)
+	- [Sekcja dostępnych klientów](#sekcja-dostępnych-klientów)
+	- [Sekcja dodawania klienta](#sekcja-dodawania-klientów)
+	- [Link wylogowywujący](#link-wylogowywujący)
+	- [Footer](#footer)
 
 **Opis funkcjonalności:**
-Jeśli użytkownik niezalogowany spróbuje wejść do panelu administratora, to zostanie przekierowany do strony logowania.
-Panel administratora będzie służył do:
-- Dodawania nowych klientów do bazy danych
-- Dodawania nowych gier do bazy danych
-- Usuwania gier z bazy danych
-- Zmieniania ilości gier w bazie danych
-- Sprawdzania dostępności gier
-- Wypożyczania gier
-- Sprawdzania zaległości klientów
+- Jeśli użytkownik niezalogowany spróbuje wejść do panelu administratora, to zostanie przekierowany do strony logowania.
+- Panel administratora będzie służył do:
+	- Dodawania nowych klientów do bazy danych
+	- Dodawania nowych gier do bazy danych
+	- Usuwania gier z bazy danych
+	- Zmieniania ilości gier w bazie danych
+	- Sprawdzania dostępności gier
+	- Wypożyczania gier
+	- Sprawdzania zaległości klientów
 
 #### Pasek górny
 **Opis wyglądu:**
@@ -79,7 +79,7 @@ Panel administratora będzie służył do:
 
 **Uwaga:**
 - System wypożyczania gier nie sprawdza ile użytkownik wypożyczył już gier!
-- System nie jest zabezpieczony przed wysyłaniem pustego formularza poprzez programy inne niż przeglądarki.
+- System nie jest zabezpieczony przed wysyłaniem pustego formularza lub formularza z niepoprawnymi typami danych poprzez programy inne niż przeglądarki.
 
 ### Sekcja wszystkich wypożyczeń:
 **Opis wyglądu:**
@@ -87,7 +87,7 @@ Panel administratora będzie służył do:
 
 | id | e-mail | title | deadline (days) | action |
 |--|--|--|--|--|
-| 4 | johnbob@o2.pl | Minecraft | 28 | [Remove] |
+| 4 | johnbob@o2.pl | Minecraft | 28 | [***Remove***] |
 
 - Każdy rekord tabeli będzie zamknięty w formularzu, pierwsze 4 komórki rekordu będą polami przeznaczonymi tylko do odczytu.
 - W kolumnie action dla każdego rekordu znajduje się przycisk *Remove*.
@@ -96,7 +96,7 @@ Panel administratora będzie służył do:
 - Przycisk *Remove* wysyła formularz, który usunie poszczególne wypożyczenie z bazy danych.
 
 **Uwaga:**
-- System nie jest zabezpieczony przed wysyłaniem pustego formularza poprzez programy inne niż przeglądarki.
+- System nie jest zabezpieczony przed wysyłaniem pustego formularza lub formularza z niepoprawnymi typami danych poprzez programy inne niż przeglądarki.
 
 #### Sekcja dostępnych gier:
 **Opis wyglądu:**
@@ -104,60 +104,65 @@ Panel administratora będzie służył do:
 
 | id | title |quantity|action|
 |--|--|--|--|
-| 1 | Minecraft |13|[***Remove***]|
+| 1 | Minecraft |13|[***Remove***] [***Change***]|
 
-- Każdy rekord tabeli będzie zamknięty w formularzu, pierwsze 4 komórki rekordu będą polami przeznaczonymi tylko do odczytu.
-- W kolumnie action dla każdego rekordu znajduje się przycisk *Remove*.
+- Każdy rekord tabeli będzie zamknięty w formularzu.
+- *id* oraz *title* są komórkami, w których znajdują się pola przeznaczone tylko do odczytu
+- *quantity* jest komórką, w której znajduje się pole tylko na liczby z 0 jako minimalną wartością, pole te jest wymagane do uzupełnienia.
+- W kolumnie action dla każdego rekordu znajduje się przycisk *Remove* oraz *Change*.
 
 **Opis funkcjonalności:**
 - Przycisk *Remove* wysyła formularz, który usunie poszczególną grę z bazy danych.
+- Przycisk *Change* wysyła formularz, który zmieni ilość sztuk danej gry w bazie danych.
 
 **Uwaga:**
-- System nie jest zabezpieczony przed wysyłaniem pustego formularza poprzez programy inne niż przeglądarki.
+- System nie jest zabezpieczony przed wysyłaniem pustego formularza lub formularza z niepoprawnymi typami danych poprzez programy inne niż przeglądarki.
 
 #### Sekcja dodawania gier:
 **Opis wyglądu:**
-W sekcji dodawania gier znajduje się wycentrowany nagłówek *Sekcja dodawania gier* a pod nim formularz z polami na wpisanie tytułu gry oraz ilość sztuk w magazynie, oprócz tego w formularzu będzie się znajdował przycisk do wysyłania formularza.
-Pola w formularzach mają atrybut *required*.
+- W sekcji dodawania gier znajduje się wycentrowany nagłówek *Sekcja dodawania gier* - Pod nagłówkiem znajduje się formularz z polami na wpisanie tytułu gry oraz ilość sztuk gry w magazynie, pola te są wymagane to wypełnienia, pole na tytuł gry jest tekstowe a pole na ilość sztuk gry jest polem na liczby z minimalną wartością równą 0.
+-W formularzu będzie się znajdował przycisk *Add*
 
 **Opis funkcjonalności:**
-Sekcja dodawania gier będzie służyć do wprowadzania nowych gier do bazy danych na podstawie podanego tytułu oraz ilości sztuk gry w magazynie, które są wpisane w formularzu.
+- Po naciśnięciu przycisku *Add*, zostanie wysłany formularz, który doda grę do bazy danych na podstawie podanego tytułu oraz ilości sztuk gry w magazynie, które są wpisane w formularzu.
+
+**Uwaga:**
+- System nie jest zabezpieczony przed wysyłaniem pustego formularza lub formularza z niepoprawnymi typami danych poprzez programy inne niż przeglądarki.
 
 #### Sekcja dostępnych klientów:
 **Opis wyglądu:**
 Znajduje się w niej wycentrowany nagłówek *Sekcja dostępnych klientów* a pod nim tabela z następującym układem:
 
-| id | first-name | last-name | email | rented | deadline |action |
-|--|--|--|--|--|--|--|
-| 1 | John | Joe | johnjoe@example.com | Minecraft| 23 days|[***Remove***] [***Change***] |
+| id | first-name | last-name | e-mail | action |
+|--|--|--|--|--|
+| 1 | John | Joe | johnjoe@example.com | [***Remove***] [***Change***] |
 
-Każdy rekord tabeli będzie zamknięty w formularzu a komórki *first-name, last-name, e-mail, rented, deadline* będą polami, w których będą z góry wpisane wartości.
-W kolumnie action znajdują się przyciski *Remove* oraz *Change* służące do wysyłania  poszczególnego formularza.
-Pola w formularzach mają atrybut *required*.
-
-**Uwaga:**
-- System nie jest zabezpieczony przed wysyłaniem pustego formularza poprzez programy inne niż przeglądarki.
-- System nie jest zabezpieczony przed edycją adresu e-mail na taki, który jest zajęty w bazie danych.
+- Każdy rekord tabeli będzie zamknięty w formularzu.
+- *id* jest kolumną, w której znajdują się pola przeznaczone tylko do odczytu
+- *first-name* oraz *last-name* są kolumnami, w których znajdują się pola tekstowe, są one wymagane do uzupełnienia.
+- *e-mail* jest kolumną, w której znadują się pola na adres e-mail, są ona wymagane do uzupełniania.
+- W kolumnie action dla każdego rekordu znajduje się przycisk *Remove* oraz *Change*.
 
 **Opis funkcjonalności:**
-Pola każdego rekordu tabeli znajdującej się w sekcji dostępnych klientów będą wypełniane informacjami adekwatnymi do każdego klienta znajdującej się w bazie danych.
-Po wciśnięciu przycisku *Remove* zostanie wysłany formualrz, którzy usunie klienta z bazy danych na podstawie jego id w formularzu.
-Po wciśnięciu przycisku *Change* zostaną zmienione informacje o imieniu, naziwsku oraz adresie e-mail użytkownika w bazie danych na takie jakie są wpisane w polach formularza.
+- Po wciśnięciu przycisku *Remove* zostanie wysłany formualrz, którzy usunie danego klienta z bazy danych
+- Po wciśnięciu przycisku *Change* zostanie wysłany formularz, który zmieni informacje o kliencie w bazie danych.
 
 **Uwaga:**
 - System nie jest zabezpieczony przed wysyłaniem pustego formularza poprzez programy inne niż przeglądarki.
+- System nie jest zabezpieczony przed zmienieniem adresu e-mail użytkownika na taki, który jest już zajęty.
 
 #### Sekcja dodawania klientów:
 **Opis wyglądu:**
-W sekcji dodawania klientów będzie się znajdował wycentrowany nagłówek *Sekcja dodawania klientów* a pod nim formularz z polami na wpisanie imienia, nazwiska oraz adresu e-mail klienta, oprócz tego w formularzu będzie się znajdował przycisk do wysyłania formularza.
-Pola w formularzach mają atrybut *required*.
+- W sekcji dodawania klientów znajduje się wycentrowany nagłówek *Sekcja dodawania klientów*
+- Pod nagłówkiem znajduje się formularz z polami na wpisanie imienia, naziwska oraz adresu e-mail klienta, pola te są wymagane to wypełnienia, pola na imię oraz nazwisko  jest tekstowe a pole na adres e-mail jest polem, które przyjmuje tylko adres e-mail.
+-W formularzu będzie się znajdował przycisk *Add*
 
 **Opis funkcjonalności:**
-Sekcja dodawania klientów będzie służyć do wprowadzania nowych klientów do bazy danych na podstawie podanego imienia, nazwiska oraz adresu e-mail użytkownika, wpisanych w formularzu
+- Po naciśnięciu przycisku *Add*, zostanie wysłany formularz, który doda klienta do bazy danych na podstawie podanego imienia i nazwiska oraz adresu e-mail, które są wpisane w formularzu.
 
 **Uwaga:**
-- System dodawania klientów nie jest zabezpieczony na możliwość dodania 2 różnych klientów posiadających ten sam adres e-mail!
-- System nie jest zabezpieczony przed wysyłaniem pustego formularza poprzez programy inne niż przeglądarki.
+- System nie jest zabezpieczony przed wysyłaniem pustego formularza lub formularza z niepoprawnymi typami danych poprzez programy inne niż przeglądarki.
+- System nie jest zabezpieczony przed dodawaniem nowego klienta na adres e-mail, który jest już zajęty.
 
 #### Link wylogowywujący
 **Opis wyglądu:**
