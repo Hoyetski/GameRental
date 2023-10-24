@@ -11,7 +11,7 @@
 		- [Sekcja dostępnych gier](#sekcja-dostępnych-gier)
 		- [Sekcja dodawania gier](#sekcja-dodawania-gier)
 		- [Sekcja dostępnych klientów](#sekcja-dostępnych-klientów)
-		- [Sekcja dodawania klienta](#sekcja-dodawania-klientów)
+		- [Sekcja dodawania klientów](#sekcja-dodawania-klientów)
 		- [Link wylogowywujący](#link-wylogowywujący)
 		- [Footer](#footer)
 
@@ -49,7 +49,7 @@
 	- [Sekcja dostępnych gier](#sekcja-dostępnych-gier)
 	- [Sekcja dodawania gier](#sekcja-dodawania-gier)
 	- [Sekcja dostępnych klientów](#sekcja-dostępnych-klientów)
-	- [Sekcja dodawania klienta](#sekcja-dodawania-klientów)
+	- [Sekcja dodawania klientów](#sekcja-dodawania-klientów)
 	- [Link wylogowywujący](#link-wylogowywujący)
 	- [Footer](#footer)
 
