@@ -18,21 +18,23 @@
 ## Wstęp:
 - Projekt *GameRental* jest projektem strony internetowej za pomocą, której pracownicy naszej wypożyczalni gier *GameRental* będą mieli ułatwioną pracę.
 - Z naszej strony będą korzystać tylko pracownicy naszej wypożyczalni gier.
-- Logo strony *GameRental*:
 ![Logo GameRental](https://i.imgur.com/jQEIAJP.png)
-
+- Powyżej znajduje się logo strony *GameRental*: 
 ## Opis wyglądu i funkcjonalności:
 
 ### Strona logowania:
 **Opis wyglądu:**
-- Strona logowania posiada 2 formularze, zarówno pierwszy jak i drugi posiadają pola na e-mail oraz hasło oraz przycisk do wysyłania formularza.
-- Formularze są obok siebie a nad nimi znajduje się wycentrowane logo strony *GameRental*
+- Strona logowania posiada 2 formularze, posiadają one pola na tylko na e-mail oraz tylko na hasło, pola te są wymagane to wypełnienia.
+- Formularz logowania posiada nagłówek *Login* oraz przycisk *Login*.
+- Formularz rejestracji posiada nagłówek *Register* oraz przycisk *Register*.
+- Formularze są obok siebie a nad nimi znajduje się wycentrowane logo strony *GameRental*.
 - Zarówno formularze jak i logo są zamknięte w kontynerze, który jest wycentrowany horyzontalnie i poziomo.
 
 **Opis funkcjonalności:**
 - Po wysłaniu formularza rejestracji użytkownik jest dodawany do bazy danych.
-- Po wysłaniu formularza logowania, tworzona jest sesja php a użytkownik jest przekierowywany do panelu administratora.
+- Po wysłaniu formularza logowania, tworzona jest sesja php a użytkownik jest. przekierowywany do panelu administratora.
 - Jeśli użytkownik wejdzie na stronę logowania będąc zalogowanym to jest przenoszony do panelu administratora.
+- Jeśli użytkownik wprowadzi złe dane do logowania i wyśle formularz, to zostanie mu wyświetlony alert o nieprawidłowych danych logowania.
 
 **Uwaga:**
 - System rejestracji nie jest zabezpieczony na możliwość założenia 2 kont na ten sam adres e-mail!
@@ -71,12 +73,13 @@
 
 #### Pasek górny
 **Opis wyglądu:**
-- Na samej górze strony logowania znajduje się pasek górny, który zawiera wycentrowane logo strony *GameRental*:
+- Na samej górze panelu administratora znajduje się pasek górny, który zawiera wycentrowane logo strony *GameRental*:
 
 #### Sekcja wypożyczania gier:
 **Opis wyglądu:**
 - W sekcji wypożyczania gier  znajduje się wycentrowany nagłówek *Sekcja wypożyczania gier* a pod nim formularz.
 - W formularzu znadują się 2 pola na wpisanie tytułu gry oraz adres e-mail klienta, pola te są wymagane do uzupełnienia.
+- Pole na tytuł gry jest tekstowe a pole na adres e-mail przyjmuje tylko adres e-mail.
 - Oprócz tego w formularzu będzie się znajdował przycisk *Rent*.
 
 **Opis funkcjonalności:**
@@ -87,7 +90,7 @@
 **Uwaga:**
 - System wypożyczania gier nie sprawdza ile użytkownik wypożyczył już gier!
 
-### Sekcja wszystkich wypożyczeń:
+#### Sekcja wszystkich wypożyczeń:
 **Opis wyglądu:**
 - Znajduje się w niej wycentrowany nagłówek *Sekcja wszystkich wypożyczeń* a pod nim tabela z następującym układem:
 
@@ -120,11 +123,15 @@
 
 #### Sekcja dodawania gier:
 **Opis wyglądu:**
-- W sekcji dodawania gier znajduje się wycentrowany nagłówek *Sekcja dodawania gier* - Pod nagłówkiem znajduje się formularz z polami na wpisanie tytułu gry oraz ilość sztuk gry w magazynie, pola te są wymagane to wypełnienia, pole na tytuł gry jest tekstowe a pole na ilość sztuk gry jest polem na liczby z minimalną wartością równą 0.
--W formularzu będzie się znajdował przycisk *Add*
+- W sekcji dodawania gier znajduje się wycentrowany nagłówek *Sekcja dodawania gier*.
+-  Pod nagłówkiem znajduje się formularz z polami na wpisanie tytułu gry oraz ilość sztuk gry w magazynie, pola te są wymagane to wypełnienia, pole na tytuł gry jest tekstowe a pole na ilość sztuk gry jest polem na liczby z minimalną wartością równą 0.
+- W formularzu będzie się znajdował przycisk *Add*.
 
 **Opis funkcjonalności:**
-- Po naciśnięciu przycisku *Add*, zostanie wysłany formularz, który doda grę do bazy danych na podstawie podanego tytułu oraz ilości sztuk gry w magazynie, które są wpisane w formularzu.
+- Po naciśnięciu przycisku *Add*, zostanie wysłany formularz, który doda grę do bazy danych.
+
+**Uwaga:**
+- System dodawania gier nie sprawdza czy dana gra już istnieje!
 
 #### Sekcja dostępnych klientów:
 **Opis wyglądu:**
@@ -134,7 +141,7 @@ Znajduje się w niej wycentrowany nagłówek *Sekcja dostępnych klientów* a po
 |--|--|--|--|--|
 | 1 | John | Joe | johnjoe@example.com | [***Remove***] [***Change***] |
 
-- Każdy rekord tabeli będzie zamknięty w formularzu.
+- Każdy rekord tabeli jest zamknięty w formularzu.
 - *id* jest kolumną, w której znajdują się pola przeznaczone tylko do odczytu
 - *first-name* oraz *last-name* są kolumnami, w których znajdują się pola tekstowe, są one wymagane do uzupełnienia.
 - *e-mail* jest kolumną, w której znadują się pola na adres e-mail, są ona wymagane do uzupełniania.
@@ -168,7 +175,7 @@ Znajduje się w niej wycentrowany nagłówek *Sekcja dostępnych klientów* a po
 
 #### Footer
 **Opis wyglądu:**
-- Na samej dole podstrony znajduje footer, który zawiera w sobie wycentrowany tekst *© 2023 Kacper Chojecki*.
+- Na samym dole panelu administratora znajduje footer, który zawiera w sobie wycentrowany tekst *© 2023 Kacper Chojecki*.
 
 
-<!-- Zrobić ten opis projektu tak, że nie musi być taka jak finalny projekt jak go będziemy oddawać ale jak będziemy oddawać projekt to trzeba zaktualizować opis projektu do stanu faktycznego. -->
+<!-- Zrobić ten opis projektu tak, że nie musi być tak jak finalny projekt ale jak go będziemy oddawać to trzeba zaktualizować opis projektu do stanu faktycznego. -->
