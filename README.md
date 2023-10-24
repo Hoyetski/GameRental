@@ -36,7 +36,7 @@
 
 **Uwaga:**
 - System rejestracji nie jest zabezpieczony na możliwość założenia 2 kont na ten sam adres e-mail!
-- System nie jest zabezpieczony przed wysyłaniem pustego formularza lub formularza z niepoprawnymi typami danych poprzez programy inne niż przeglądarki.
+- System logowania i rejestracji nie jest zabezpieczony przed wysyłaniem pustego formularza lub formularza z niepoprawnymi typami danych poprzez programy inne niż przeglądarki.
 
 ### Panel administratora:
 **Opis wyglądu:**
@@ -57,10 +57,17 @@
 	- Dodawania nowych klientów do bazy danych
 	- Dodawania nowych gier do bazy danych
 	- Usuwania gier z bazy danych
+	- Usuwania klientów z bazy danych
 	- Zmieniania ilości gier w bazie danych
+	- Zmieniania danych klienta w bazie danych
 	- Sprawdzania dostępności gier
-	- Wypożyczania gier
+	- Dodawania nowych wypożyczeń do bazy danych
+	- Usuwania wypożyczeń z bazy danych
 	- Sprawdzania zaległości klientów
+- Po każdej przeprowadzonej operacji w panelu administratora, zostanie on automatycznie odświeżony.
+
+**Uwaga:**
+- System panelu administratora nie jest zabezpieczony przed wysyłaniem pustych formularzy lub formularzy z niepoprawnymi typami danych poprzez programy inne niż przeglądarki
 
 #### Pasek górny
 **Opis wyglądu:**
@@ -79,7 +86,6 @@
 
 **Uwaga:**
 - System wypożyczania gier nie sprawdza ile użytkownik wypożyczył już gier!
-- System nie jest zabezpieczony przed wysyłaniem pustego formularza lub formularza z niepoprawnymi typami danych poprzez programy inne niż przeglądarki.
 
 ### Sekcja wszystkich wypożyczeń:
 **Opis wyglądu:**
@@ -94,9 +100,6 @@
 
 **Opis funkcjonalności:**
 - Przycisk *Remove* wysyła formularz, który usunie poszczególne wypożyczenie z bazy danych.
-
-**Uwaga:**
-- System nie jest zabezpieczony przed wysyłaniem pustego formularza lub formularza z niepoprawnymi typami danych poprzez programy inne niż przeglądarki.
 
 #### Sekcja dostępnych gier:
 **Opis wyglądu:**
@@ -115,9 +118,6 @@
 - Przycisk *Remove* wysyła formularz, który usunie poszczególną grę z bazy danych.
 - Przycisk *Change* wysyła formularz, który zmieni ilość sztuk danej gry w bazie danych.
 
-**Uwaga:**
-- System nie jest zabezpieczony przed wysyłaniem pustego formularza lub formularza z niepoprawnymi typami danych poprzez programy inne niż przeglądarki.
-
 #### Sekcja dodawania gier:
 **Opis wyglądu:**
 - W sekcji dodawania gier znajduje się wycentrowany nagłówek *Sekcja dodawania gier* - Pod nagłówkiem znajduje się formularz z polami na wpisanie tytułu gry oraz ilość sztuk gry w magazynie, pola te są wymagane to wypełnienia, pole na tytuł gry jest tekstowe a pole na ilość sztuk gry jest polem na liczby z minimalną wartością równą 0.
@@ -125,9 +125,6 @@
 
 **Opis funkcjonalności:**
 - Po naciśnięciu przycisku *Add*, zostanie wysłany formularz, który doda grę do bazy danych na podstawie podanego tytułu oraz ilości sztuk gry w magazynie, które są wpisane w formularzu.
-
-**Uwaga:**
-- System nie jest zabezpieczony przed wysyłaniem pustego formularza lub formularza z niepoprawnymi typami danych poprzez programy inne niż przeglądarki.
 
 #### Sekcja dostępnych klientów:
 **Opis wyglądu:**
@@ -148,7 +145,6 @@ Znajduje się w niej wycentrowany nagłówek *Sekcja dostępnych klientów* a po
 - Po wciśnięciu przycisku *Change* zostanie wysłany formularz, który zmieni informacje o kliencie w bazie danych.
 
 **Uwaga:**
-- System nie jest zabezpieczony przed wysyłaniem pustego formularza poprzez programy inne niż przeglądarki.
 - System nie jest zabezpieczony przed zmienieniem adresu e-mail użytkownika na taki, który jest już zajęty.
 
 #### Sekcja dodawania klientów:
@@ -161,7 +157,6 @@ Znajduje się w niej wycentrowany nagłówek *Sekcja dostępnych klientów* a po
 - Po naciśnięciu przycisku *Add*, zostanie wysłany formularz, który doda klienta do bazy danych na podstawie podanego imienia i nazwiska oraz adresu e-mail, które są wpisane w formularzu.
 
 **Uwaga:**
-- System nie jest zabezpieczony przed wysyłaniem pustego formularza lub formularza z niepoprawnymi typami danych poprzez programy inne niż przeglądarki.
 - System nie jest zabezpieczony przed dodawaniem nowego klienta na adres e-mail, który jest już zajęty.
 
 #### Link wylogowywujący
