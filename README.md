@@ -26,7 +26,7 @@
 **Opis wyglądu:**
 - Strona logowania posiada 2 formularze, posiadają one pola na tylko na e-mail oraz tylko na hasło, pola te są wymagane to wypełnienia.
 - Formularz logowania posiada nagłówek *Login* oraz przycisk *Login*.
-- Formularz rejestracji posiada nagłówek *Register* oraz przycisk *Login*.
+- Formularz rejestracji posiada nagłówek *Register* oraz przycisk *Register*.
 - Formularze są obok siebie a nad nimi znajduje się wycentrowane logo strony *GameRental*.
 - Zarówno formularze jak i logo są zamknięte w kontynerze, który jest wycentrowany horyzontalnie i poziomo.
 
