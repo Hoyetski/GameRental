@@ -32,13 +32,14 @@
 
 **Opis funkcjonalności:**
 - Po wysłaniu formularza rejestracji użytkownik jest dodawany do bazy danych.
-- Po wysłaniu formularza logowania, tworzona jest sesja php a użytkownik jest. przekierowywany do panelu administratora.
+- Po wysłaniu formularza logowania, tworzona jest sesja php a użytkownik jest przekierowywany do panelu administratora.
 - Jeśli użytkownik wejdzie na stronę logowania będąc zalogowanym to jest przenoszony do panelu administratora.
 - Jeśli użytkownik wprowadzi złe dane do logowania i wyśle formularz, to zostanie mu wyświetlony alert o nieprawidłowych danych logowania.
 
 **Uwaga:**
 - System rejestracji nie jest zabezpieczony na możliwość założenia 2 kont na ten sam adres e-mail!
 - System logowania i rejestracji nie jest zabezpieczony przed wysyłaniem pustego formularza lub formularza z niepoprawnymi typami danych poprzez programy inne niż przeglądarki.
+- System logowania i rejestracji nie jest zabezpieczony przed sql injection.
 
 ### Panel administratora:
 **Opis wyglądu:**
@@ -70,6 +71,7 @@
 
 **Uwaga:**
 - System panelu administratora nie jest zabezpieczony przed wysyłaniem pustych formularzy lub formularzy z niepoprawnymi typami danych poprzez programy inne niż przeglądarki
+- System panelu administratora nie jest zabezpieczony przed sql injection.
 
 #### Pasek górny
 **Opis wyglądu:**
@@ -124,7 +126,7 @@
 #### Sekcja dodawania gier:
 **Opis wyglądu:**
 - W sekcji dodawania gier znajduje się wycentrowany nagłówek *Sekcja dodawania gier*.
--  Pod nagłówkiem znajduje się formularz z polami na wpisanie tytułu gry oraz ilość sztuk gry w magazynie, pola te są wymagane to wypełnienia, pole na tytuł gry jest tekstowe a pole na ilość sztuk gry jest polem na liczby z minimalną wartością równą 0.
+-  Pod nagłówkiem znajduje się formularz z polami na wpisanie tytułu gry oraz ilość sztuk gry w magazynie, pola te są wymagane do wypełnienia, pole na tytuł gry jest tekstowe a pole na ilość sztuk gry jest polem na liczby z minimalną wartością równą 0.
 - W formularzu będzie się znajdował przycisk *Add*.
 
 **Opis funkcjonalności:**
@@ -144,7 +146,7 @@ Znajduje się w niej wycentrowany nagłówek *Sekcja dostępnych klientów* a po
 - Każdy rekord tabeli jest zamknięty w formularzu.
 - *id* jest kolumną, w której znajdują się pola przeznaczone tylko do odczytu
 - *first-name* oraz *last-name* są kolumnami, w których znajdują się pola tekstowe, są one wymagane do uzupełnienia.
-- *e-mail* jest kolumną, w której znadują się pola na adres e-mail, są ona wymagane do uzupełniania.
+- *e-mail* jest kolumną, w której znadują się pola na adres e-mail, są one wymagane do uzupełniania.
 - W kolumnie action dla każdego rekordu znajduje się przycisk *Remove* oraz *Change*.
 
 **Opis funkcjonalności:**
@@ -158,7 +160,7 @@ Znajduje się w niej wycentrowany nagłówek *Sekcja dostępnych klientów* a po
 **Opis wyglądu:**
 - W sekcji dodawania klientów znajduje się wycentrowany nagłówek *Sekcja dodawania klientów*
 - Pod nagłówkiem znajduje się formularz z polami na wpisanie imienia, naziwska oraz adresu e-mail klienta, pola te są wymagane to wypełnienia, pola na imię oraz nazwisko  jest tekstowe a pole na adres e-mail jest polem, które przyjmuje tylko adres e-mail.
--W formularzu będzie się znajdował przycisk *Add*
+- W formularzu będzie się znajdował przycisk *Add*
 
 **Opis funkcjonalności:**
 - Po naciśnięciu przycisku *Add*, zostanie wysłany formularz, który doda klienta do bazy danych na podstawie podanego imienia i nazwiska oraz adresu e-mail, które są wpisane w formularzu.
