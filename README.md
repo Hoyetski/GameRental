@@ -155,6 +155,7 @@ Znajduje się w niej wycentrowany nagłówek *Sekcja dostępnych klientów* a po
 
 **Uwaga:**
 - System nie jest zabezpieczony przed zmienieniem adresu e-mail użytkownika na taki, który jest już zajęty.
+- System nie jest zabezpieczony przed usuwaniem klienta, który ma wypożyczoną grę.
 
 #### Sekcja dodawania klientów:
 **Opis wyglądu:**
