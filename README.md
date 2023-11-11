@@ -80,12 +80,12 @@
 #### Sekcja wypożyczania gier:
 **Opis wyglądu:**
 - W sekcji wypożyczania gier  znajduje się wycentrowany nagłówek *Sekcja wypożyczania gier* a pod nim formularz.
-- W formularzu znadują się 2 pola na wpisanie tytułu gry oraz adres e-mail klienta, pola te są wymagane do uzupełnienia.
-- Pole na tytuł gry jest tekstowe a pole na adres e-mail przyjmuje tylko adres e-mail.
+- W formularzu znadują się 3 pola na wpisanie tytułu gry, adresu e-mail klienta oraz pole na zaznaczenie daty do kiedy gra ma być wypożyczona, wszystkie te pola są wymagane do uzupełnienia.
+- Pole na tytuł gry jest tekstowe, pole na adres e-mail przyjmuje tylko adres e-mail a pole na zaznaczenie daty jest polem typu *date*.
 - Oprócz tego w formularzu będzie się znajdował przycisk *Rent*.
 
 **Opis funkcjonalności:**
-- Po naciśnięciu przycisku *Rent*, zostatnie wysłany formualrz, który wypożyczy daną grę dla danego użytkownika.
+- Po naciśnięciu przycisku *Rent*, zostatnie wysłany formualrz, który wypożyczy daną grę dla danego użytkownika oraz odejmie jedną sztukę od ilości sztuk gry w bazie danych.
 - Jeśli dana gra jest niedostępna lub nie istnieje to wyświetla się alert o braku dostępności gry a wypożyczenie nie zostanie stworzone.
 - Jeśli dany użytkownik nie istnieje to wyświetla się alert o nieistniejącym użytkowniku a wypożyczenie nie zostanie stworzone.
 
