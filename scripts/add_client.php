@@ -7,15 +7,22 @@
         $email = $_POST['email'];
 
         include('../includes/connection.php');
-    
-        $query = "INSERT INTO clients (first_name, last_name, email) VALUES ('$first_name', '$last_name', '$email')";
-    
-        if (mysqli_query($conn, $query)) {
-            header('Location: ../admin_panel.php');
+
+        $check_query = "SELECT * FROM clients WHERE email = '$email'";
+        $result = mysqli_query($conn, $check_query);
+
+        if (mysqli_num_rows($result) > 0) {
+            echo "<script>alert('This email is already in use.'); window.location.href='../admin_panel.php';</script>";
         } else {
-            echo "Error inserting a new client: " . mysqli_error($conn);
+            $insert_query = "INSERT INTO clients (first_name, last_name, email) VALUES ('$first_name', '$last_name', '$email')";
+            
+            if (mysqli_query($conn, $insert_query)) {
+                header('Location: ../admin_panel.php');
+            } else {
+                echo "Error inserting a new client: " . mysqli_error($conn);
+            }
         }
-        
+
         mysqli_close($conn);
     } else {
         header('Location: ../index.php');

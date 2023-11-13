@@ -7,12 +7,19 @@
     
         include('../includes/connection.php');
     
-        $query = "INSERT INTO games (title, quantity) VALUES ('$title', '$quantity')";
-    
-        if (mysqli_query($conn, $query)) {
-            header('Location: ../admin_panel.php');
+        $checkQuery = "SELECT * FROM games WHERE title = '$title'";
+        $result = mysqli_query($conn, $checkQuery);
+
+        if (mysqli_num_rows($result) > 0) {
+            echo "<script>alert('This game already exists.'); window.location.href='../admin_panel.php';</script>";
         } else {
-            echo "Error inserting a new game: " . mysqli_error($conn);
+            $insertQuery = "INSERT INTO games (title, quantity) VALUES ('$title', '$quantity')";
+    
+            if (mysqli_query($conn, $insertQuery)) {
+                header('Location: ../admin_panel.php');
+            } else {
+                echo "Error inserting a new game: " . mysqli_error($conn);
+            }
         }
   
         mysqli_close($conn);
