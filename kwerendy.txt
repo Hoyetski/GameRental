@@ -1,0 +1,31 @@
+CREATE DATABASE game_rental;
+
+USE game_rental;
+
+CREATE TABLE admins (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    email VARCHAR(255),
+    password VARCHAR(255)
+);
+
+CREATE TABLE clients (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    first_name VARCHAR(255),
+    last_name VARCHAR(255),
+    email VARCHAR(255)
+);
+
+CREATE TABLE games (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(255),
+    quantity INT
+);
+
+CREATE TABLE rentals (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    game_id INT,
+    client_id INT,
+    rental_date DATE,
+    FOREIGN KEY (game_id) REFERENCES games(id),
+    FOREIGN KEY (client_id) REFERENCES clients(id)
+);

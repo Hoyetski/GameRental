@@ -11,11 +11,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Access admin panel</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./assets/style.css">
 </head>
 <body>
     <div class="main_contaier">
-        <img src="GameRental_logo.png" alt="GameRental logo" height="130px">
+        <img src="./assets/GameRental_logo.png" alt="GameRental logo" height="130px">
         <div class="forms_container">
             <form action="index.php" method="post">
                 <h3>Login</h3>
@@ -27,7 +27,7 @@
             </form>
             <h3>or</h3>
             <form action="index.php" method="post">
-                <h3>Password</h3>
+                <h3>Register</h3>
                 <label for="email">E-mail</label>
                 <input type="email" name="email" required>
                 <label for="password">Password</label>
@@ -40,9 +40,9 @@
 </html>
 <?php
     if (isset($_POST['login'])) {
-        include('login.php');
+        include('./includes/login.php');
     }
     else if (isset($_POST['register'])) {
-        include('register.php');
+        include('./includes/register.php');
     }
 ?>
