@@ -35,9 +35,9 @@
 - Po wysłaniu formularza logowania, tworzona jest sesja php a użytkownik jest przekierowywany do panelu administratora.
 - Jeśli użytkownik wejdzie na stronę logowania będąc zalogowanym to jest przenoszony do panelu administratora.
 - Jeśli użytkownik wprowadzi złe dane do logowania i wyśle formularz, to zostanie mu wyświetlony alert o nieprawidłowych danych logowania.
+- Jeśli użytkownik spróbuje założyć konto na email, który już jest zajęty to wyświetli mu się komunikat o tym oraz rejestracja nowego użytkownika nie nastąpi.
 
 **Uwaga:**
-- System rejestracji nie jest zabezpieczony na możliwość założenia 2 kont na ten sam adres e-mail!
 - System logowania i rejestracji nie jest zabezpieczony przed wysyłaniem pustego formularza lub formularza z niepoprawnymi typami danych poprzez programy inne niż przeglądarki.
 - System logowania i rejestracji nie jest zabezpieczony przed sql injection.
 
@@ -131,9 +131,7 @@
 
 **Opis funkcjonalności:**
 - Po naciśnięciu przycisku *Add*, zostanie wysłany formularz, który doda grę do bazy danych.
-
-**Uwaga:**
-- System dodawania gier nie sprawdza czy dana gra już istnieje!
+- Jeśli użytkownik spróbuje dodać grę o tytule, który już istnieje to zostanie mu wyświetlony komunikat a operacja zostanie przerwana.
 
 #### Sekcja dostępnych klientów:
 **Opis wyglądu:**
@@ -152,10 +150,9 @@ Znajduje się w niej wycentrowany nagłówek *Sekcja dostępnych klientów* a po
 **Opis funkcjonalności:**
 - Po wciśnięciu przycisku *Remove* zostanie wysłany formualrz, którzy usunie danego klienta z bazy danych
 - Po wciśnięciu przycisku *Change* zostanie wysłany formularz, który zmieni informacje o kliencie w bazie danych.
+- Jeśli użytkownik będzie chciał usunąć klienta, który ma wypożyczoną grę to zostanie mu wyświetlony komunikat a operacja zostanie przerwana.
+- Jeśli użytkownik zmieni adres e-mail klienta na taki, który już jest zajęty to zostanie mu wyświetlony komunikat a operacja zostanie przerwana.
 
-**Uwaga:**
-- System nie jest zabezpieczony przed zmienieniem adresu e-mail użytkownika na taki, który jest już zajęty.
-- System nie jest zabezpieczony przed usuwaniem klienta, który ma wypożyczoną grę.
 
 #### Sekcja dodawania klientów:
 **Opis wyglądu:**
@@ -165,9 +162,8 @@ Znajduje się w niej wycentrowany nagłówek *Sekcja dostępnych klientów* a po
 
 **Opis funkcjonalności:**
 - Po naciśnięciu przycisku *Add*, zostanie wysłany formularz, który doda klienta do bazy danych na podstawie podanego imienia i nazwiska oraz adresu e-mail, które są wpisane w formularzu.
+- Jeśli użytownik spróbuje dodać nowego klienta na adres e-mail, który jest już przypisany do jakiegoś klienta to zostanie mu wyświetlony komunikat a operacja nie zostanie zrealizowana.
 
-**Uwaga:**
-- System nie jest zabezpieczony przed dodawaniem nowego klienta na adres e-mail, który jest już zajęty.
 
 #### Link wylogowywujący
 **Opis wyglądu:**
